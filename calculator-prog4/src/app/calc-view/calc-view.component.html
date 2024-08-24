@@ -1,0 +1,18 @@
+<div class="calculadora-container">
+    <h1>Calculadora</h1>
+
+    <div class="input-group">
+        <h3>Valor 1</h3>
+        <input type="text" #inputV1 (keyup)="0" placeholder="Ingrese el primer Valor">
+        <h3>Valor 2</h3>
+        <input type="text" #inputV2 (keyup)="0" placeholder="Ingrese el segundo Valor">
+        <h3>Resultado</h3>
+        <input type="text" disabled [value]="resultado">
+    </div>
+    <app-calc-action 
+        [v1]="inputV1.value" 
+        [v2]="inputV2.value"
+        (resultado)="mostrarResultado($event)"
+        (limpiar)="limpiarInputs(inputV1, inputV2)"
+    />
+</div>
