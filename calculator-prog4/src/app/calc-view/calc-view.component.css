@@ -9,7 +9,7 @@
     background-color: #ffffff;
 }
 
-.input-group p {
+.input-group h3 {
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -22,5 +22,9 @@
     border-radius: 5px;
     box-sizing: border-box;
     text-align: center;
+}
+
+#resultado {    
+    font-weight: bold;
 }
 

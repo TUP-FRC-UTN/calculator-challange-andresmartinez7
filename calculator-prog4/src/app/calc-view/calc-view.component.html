@@ -7,7 +7,7 @@
         <h3>Valor 2</h3>
         <input type="text" #inputV2 (keyup)="0" placeholder="Ingrese el segundo Valor">
         <h3>Resultado</h3>
-        <input type="text" disabled [value]="resultado">
+        <input type="text" disabled [value]="resultado" id="resultado">
     </div>
     <app-calc-action 
         [v1]="inputV1.value" 
